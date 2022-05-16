@@ -10,7 +10,9 @@
 		$check = mysqli_num_rows($res);
 		if($check > 0){
 			$row = mysqli_fetch_assoc($res);
-			$suppliers = $row['maNhaCungCap'];
+			$suppliers = $row['tenNhaCungCap'];
+			$sdt = $row['soDienThoai'];
+			$address = $row['diaChi'];
 		}else{
 			header('location:supplier.php');
 			die();

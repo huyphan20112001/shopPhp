@@ -14,6 +14,10 @@
 		if($check > 0){
 			$row = mysqli_fetch_assoc($res);
 			$user = $row['maKhachHang'];
+			$sdt = $row['soDienThoai'];
+			$name = $row['hoTen'];
+			$password = $row['matKhau'];
+			$address = $row['diaChi'];
 		}else{
 			header('location:users.php');
 			die();
